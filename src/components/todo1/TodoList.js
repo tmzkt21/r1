@@ -32,9 +32,9 @@ const TodoList = () => {
     },[data.page, flag])
 
     const movePage = (num) => {
-        setFlag(!flag)
-        setData({...data, page:num})
         setTargetTno(null)
+        setData({...data, page:num})
+        setFlag(!flag)
         // 투두레지스터에서 1을 넣으면 타겟tno 를 널값으로 바꾼다
     }
 
